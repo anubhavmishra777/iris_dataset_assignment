@@ -42,20 +42,71 @@ print(f"Number of training samples: {len(X_train)}")
 print(f"Number of testing samples: {len(X_test)}")
 
 
-Repository Contents
 
-- (link unavailable): Python script containing the code for loading and splitting the Iris dataset
+ second code explanation
 
-Running the Code
 
-1. Clone the repository to your local machine
-2. Navigate to the repository directory in your terminal/command prompt
-3. Run the Python script using python (link unavailable)
 
-License
 
-[Insert license information, if applicable]
+ Here's a step-by-step README file for your GitHub repository:
 
-Contributing
+Iris Dataset Exploration
 
-[Insert contribution guidelines, if applicable]
+Step 1: Import Necessary Libraries
+
+- Import the required libraries:
+    - pandas for data manipulation and analysis
+    - load_iris from scikit-learn for loading the Iris dataset
+
+Code:
+
+import pandas as pd
+from sklearn.datasets import load_iris
+
+
+Step 2: Load the Iris Dataset
+
+- Load the Iris dataset using load_iris
+- Convert the dataset into a Pandas DataFrame iris_df with feature names as columns
+
+Code:
+
+iris = load_iris()
+iris_df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
+
+
+Step 3: Display the First Five Rows
+
+- Print the first five rows of the dataset using head()
+
+Code:
+
+print("First five rows of the dataset:")
+print(iris_df.head())
+
+
+Step 4: Display the Shape of the Dataset
+
+- Print the shape of the dataset (number of rows and columns) using shape
+
+Code:
+
+print("\nShape of the dataset:")
+print(iris_df.shape)
+
+
+Step 5: Display Summary Statistics
+
+- Print summary statistics (mean, std, min, 25%, 50%, 75%, max) for each feature using describe()
+
+Code:
+
+print("\nSummary statistics of the dataset:")
+print(iris_df.describe())
+
+
+third code explanation
+
+
+
+
